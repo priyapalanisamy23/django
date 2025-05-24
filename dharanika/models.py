@@ -10,9 +10,10 @@ class student(models.Model):
     def __str__(self):
         return self.name
     
-class biodata(models.model):
+class biodata(models.Model):
     dept=models.CharField(max_length=50)
     age=models.IntegerField()
-    genter=models.CharField(max_length=50)
-    mobile_no=models.IntegerField()
+    gender=models.CharField(max_length=50)
+    mobile_no=models.CharField(max_length=10)
     stream=models.CharField(max_length=50)
+
